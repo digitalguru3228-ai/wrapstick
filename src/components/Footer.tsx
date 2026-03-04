@@ -87,7 +87,7 @@ export default function Footer() {
               © {new Date().getFullYear()} Wrapstick. All rights reserved.
             </p>
             <p className="font-paragraph text-sm text-foreground/60">
-              Made with passion in Gujarat, India
+              Made with Digital Guru Agency,+91 8485952900
             </p>
           </div>
         </div>
