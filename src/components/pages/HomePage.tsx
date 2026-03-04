@@ -417,10 +417,7 @@ export default function HomePage() {
                               Order Now
                             </Button>
                           </div>
-                          <div className="relative h-64 md:h-auto overflow-hidden">
 
-
-                          </div>
                         </div>
                       </div>
 
