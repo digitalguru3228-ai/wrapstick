@@ -106,7 +106,7 @@ export default function HomePage() {
         { name: "Frosty Strawberry", price: "₹100" },
         { name: "Frosty Mango", price: "₹110" },
         { name: "Frosty Choco", price: "₹120" },
-        { name: "Frosty Orange", price: "₹20" }
+        { name: "Frosty Orange", price: "₹120" }
       ]
     }
   ];
