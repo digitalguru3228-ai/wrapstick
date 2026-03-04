@@ -84,9 +84,9 @@ export default function HomePage() {
         { name: "Paneer Twister ", price: "₹90" },
         { name: "Paneer Maxicana", price: "₹100" },
         { name: "Tangy Wrap", price: "₹110" },
-        { name: "Chilly Wrap", price: "₹80" }
-        { name: "Munchy Wrap", price: "₹80" }
-        { name: "Fairy Wrap", price: "₹70" }
+        { name: "Chilly Wrap", price: "₹80" },
+        { name: "Munchy Wrap", price: "₹80" },
+        { name: "Fairy Wrap", price: "₹70" },
       ]
     },
     {
