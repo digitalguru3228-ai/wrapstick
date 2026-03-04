@@ -93,7 +93,7 @@ export default function HomePage() {
       id: 'pizza',
       title: "Premium Pizza",
       items: [
-        { name: "Margherita", price: "₹150" },
+        { name: "Top 6 Inches", price: "₹130" },
         { name: "Farmhouse Special", price: "₹220" },
         { name: "Spicy Paneer", price: "₹240" },
         { name: "Wrapstick Supreme", price: "₹280" }
