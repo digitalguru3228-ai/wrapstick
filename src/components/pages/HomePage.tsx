@@ -98,7 +98,7 @@ export default function HomePage() {
         { name: "Cotazza 8 inches", price: "₹280" },
         { name: "Wrapstick Supreme", price: "₹280" }
       ]
-    }
+    },
      {
       id: 'pizza',
       title: "Premium Pizza",
