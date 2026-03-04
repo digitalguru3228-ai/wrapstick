@@ -100,7 +100,7 @@ export default function HomePage() {
       ]
     },
      {
-      id: 'pizza',
+      id: 'Thick Sha',
       title: "Premium Pizza",
       items: [
         { name: "Top 6 Inches", price: "₹130" },
