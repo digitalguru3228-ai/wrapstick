@@ -425,7 +425,13 @@ export default function HomePage() {
                               width={600}
                             />
                                 <Image
-                              src="https://static.wixstatic.com/media/db083c_0596e478faaf4dd6a73f6d5931ee8660~mv2.png?originWidth=576&originHeight=576"
+                              src="https://static.wixstatic.com/media/db083c_90987eb1c29840fc8e0f483e37ad2307~mv2.png?originWidth=576&originHeight=576"
+                              alt={category.items[0].name}
+                              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                              width={600}
+                            />
+                              <Image
+                              src="https://static.wixstatic.com/media/db083c_90987eb1c29840fc8e0f483e37ad2307~mv2.png?originWidth=576&originHeight=576"
                               alt={category.items[0].name}
                               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                               width={600}
