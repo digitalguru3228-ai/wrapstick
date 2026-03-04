@@ -1,12 +1,12 @@
 // HPI 1.7-G
-import React, { useRef, useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { motion, useScroll, useTransform, useSpring, useInView, AnimatePresence } from 'framer-motion';
-import { Phone, ArrowRight, Star, MapPin, Clock, ChevronRight, Utensils } from 'lucide-react';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 import { Button } from '@/components/ui/button';
 import { Image } from '@/components/ui/image';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { ArrowRight, Clock, MapPin, Phone, Utensils } from 'lucide-react';
+import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 // --- Utility Components ---
 
@@ -84,7 +84,8 @@ export default function HomePage() {
         { name: "Paneer Twister ", price: "₹90" },
         { name: "Paneer Maxicana", price: "₹100" },
         { name: "Tangy Wrap", price: "₹110" },
-        { name: "Mexican Salsa Wrap", price: "₹130" }
+        { name: "Chilly Wrap", price: "₹80" }
+
       ]
     },
     {
