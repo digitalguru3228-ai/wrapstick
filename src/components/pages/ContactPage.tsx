@@ -31,7 +31,7 @@ export default function ContactPage() {
     {
       icon: Clock,
       title: 'Business Hours',
-      content: 'Open Daily: 10:00 AM - 11:00 PM',
+      content: 'Open Daily: 12:00 PM - 11:30 PM',
       action: null,
       actionText: null,
     },
@@ -47,7 +47,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative w-full pt-32 pb-24 bg-dark-grey">
         <div className="max-w-[100rem] mx-auto px-8">
@@ -83,7 +83,7 @@ export default function ContactPage() {
                 <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center">
                   <info.icon className="h-8 w-8 text-primary" />
                 </div>
-                
+
                 <div className="space-y-3">
                   <h3 className="font-heading text-2xl text-foreground">
                     {info.title}
@@ -159,7 +159,7 @@ export default function ContactPage() {
             <p className="font-paragraph text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto">
               Place your order now via WhatsApp for quick and easy service
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-6 justify-center pt-4">
               <Button
                 onClick={handleWhatsAppContact}
