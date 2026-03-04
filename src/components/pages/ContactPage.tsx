@@ -39,7 +39,7 @@ export default function ContactPage() {
       icon: MapPin,
       title: 'Location',
       content: 'Hotel Al Qama, Hussain Tekari, Post Kanodar, Palanpur, Banaskantha, Gujarat 385520, India',
-      action: () => window.open('https://maps.google.com/?q=Hotel+Al+Qama+Hussain+Tekari+Kanodar+Palanpur+Gujarat+385520', '_blank'),
+      action: () => window.open('https://maps.app.goo.gl/NXz6ouRKxdrfpv3R8', '_blank'),
       actionText: 'Get Directions',
     },
   ];
