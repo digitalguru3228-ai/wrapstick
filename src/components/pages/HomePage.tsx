@@ -95,7 +95,7 @@ export default function HomePage() {
       items: [
         { name: "Top 6 Inches", price: "₹130" },
         { name: "Cheese Square 8 inches / 6 inches Special", price: "₹200 / 150" },
-        { name: "Co", price: "₹240" },
+        { name: "Cotazza 8 inches", price: "₹280" },
         { name: "Wrapstick Supreme", price: "₹280" }
       ]
     }
