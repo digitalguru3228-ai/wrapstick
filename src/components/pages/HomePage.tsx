@@ -86,7 +86,7 @@ export default function HomePage() {
         { name: "Tangy Wrap", price: "₹110" },
         { name: "Chilly Wrap", price: "₹80" }
         { name: "Munchy Wrap", price: "₹80" }
-        { name: "Chilly Wrap", price: "₹80" }
+        { name: "Fairy Wrap", price: "₹70" }
       ]
     },
     {
