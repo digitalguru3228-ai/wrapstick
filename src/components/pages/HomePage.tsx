@@ -105,8 +105,8 @@ export default function HomePage() {
       items: [
         { name: "Frosty Strawberry", price: "₹100" },
         { name: "Frosty Mango", price: "₹110" },
-        { name: "Cotazza 8 inches", price: "₹280" },
-        { name: "Wrapstick Supreme", price: "₹280" }
+        { name: "Frosty Choco", price: "₹120" },
+        { name: "Frosty Orange", price: "₹20" }
       ]
     }
   ];
