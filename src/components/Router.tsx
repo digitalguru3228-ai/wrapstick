@@ -7,6 +7,7 @@ import MenuPage from '@/components/pages/MenuPage';
 import MenuItemDetailPage from '@/components/pages/MenuItemDetailPage';
 import AboutPage from '@/components/pages/AboutPage';
 import ContactPage from '@/components/pages/ContactPage';
+import TableBookingPage from '@/components/pages/TableBookingPage';
 
 // Layout component that includes ScrollToTop
 function Layout() {
@@ -57,6 +58,13 @@ const router = createBrowserRouter([
         element: <ContactPage />,
         routeMetadata: {
           pageIdentifier: 'contact',
+        },
+      },
+      {
+        path: "booking",
+        element: <TableBookingPage />,
+        routeMetadata: {
+          pageIdentifier: 'booking',
         },
       },
       {
