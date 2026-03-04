@@ -83,7 +83,7 @@ export default function HomePage() {
       items: [
         { name: "Paneer Twister ", price: "₹90" },
         { name: "Paneer Maxicana", price: "₹100" },
-        { name: "Tangy Wrap", price: "₹120" },
+        { name: "Tangy Wrap", price: "₹110" },
         { name: "Mexican Salsa Wrap", price: "₹130" }
       ]
     },
