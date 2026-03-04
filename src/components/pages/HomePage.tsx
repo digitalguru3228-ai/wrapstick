@@ -100,11 +100,11 @@ export default function HomePage() {
       ]
     },
      {
-      id: 'Thick Sha',
-      title: "Premium Pizza",
+      id: 'Thick Shakes',
+      title: "Premium Shakes",
       items: [
-        { name: "Top 6 Inches", price: "₹130" },
-        { name: "Cheese Square 8 inches / 6 inches Special", price: "₹200 / 150" },
+        { name: "Frosty Strawberry", price: "₹100" },
+        { name: "Frosty Mango", price: "₹110" },
         { name: "Cotazza 8 inches", price: "₹280" },
         { name: "Wrapstick Supreme", price: "₹280" }
       ]
