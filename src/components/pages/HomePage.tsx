@@ -81,9 +81,9 @@ export default function HomePage() {
       id: 'wraps',
       title: "Signature Wraps",
       items: [
-        { name: "C Veg Wrap", price: "₹90" },
-        { name: "Paneer Tikka Wrap", price: "₹110" },
-        { name: "Cheese Corn Wrap", price: "₹120" },
+        { name: "Paneer Twister ", price: "₹90" },
+        { name: "Paneer Maxicana", price: "₹100" },
+        { name: "Tangy Wrap", price: "₹120" },
         { name: "Mexican Salsa Wrap", price: "₹130" }
       ]
     },
