@@ -430,12 +430,7 @@ export default function HomePage() {
                               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                               width={600}
                             />
-                              <Image
-                              src="https://static.wixstatic.com/media/db083c_90987eb1c29840fc8e0f483e37ad2307~mv2.png?originWidth=576&originHeight=576"
-                              alt={category.items[0].name}
-                              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                              width={600}
-                            />
+
                           </div>
                         </div>
                       </div>
