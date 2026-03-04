@@ -62,7 +62,7 @@ const ParallaxImage = ({ src, alt, className, height = "h-full" }: { src: string
 
 export default function HomePage() {
   const containerRef = useRef(null);
-  
+
   // Data Sources (Canonized)
   const menuCategories = [
     {
@@ -81,7 +81,7 @@ export default function HomePage() {
       id: 'wraps',
       title: "Signature Wraps",
       items: [
-        { name: "Classic Veg Wrap", price: "₹90" },
+        { name: "C Veg Wrap", price: "₹90" },
         { name: "Paneer Tikka Wrap", price: "₹110" },
         { name: "Cheese Corn Wrap", price: "₹120" },
         { name: "Mexican Salsa Wrap", price: "₹130" }
@@ -137,7 +137,7 @@ export default function HomePage() {
         {/* Content */}
         <div className="relative z-20 w-full max-w-[120rem] mx-auto px-6 md:px-12 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
+
             {/* Typography Column */}
             <div className="lg:col-span-8 flex flex-col justify-center">
               <motion.div
@@ -215,9 +215,9 @@ export default function HomePage() {
                   </div>
                 </div>
               </motion.div>
-              
+
               {/* Decorative Elements */}
-              <motion.div 
+              <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 className="absolute -top-10 -right-10 w-40 h-40 border border-dashed border-primary/30 rounded-full z-0"
@@ -227,7 +227,7 @@ export default function HomePage() {
         </div>
 
         {/* Scroll Indicator */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1 }}
@@ -247,14 +247,14 @@ export default function HomePage() {
       <section className="w-full py-32 bg-dark-grey relative overflow-hidden">
         <div className="max-w-[120rem] mx-auto px-6 md:px-12 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
-            
+
             {/* Image Grid */}
             <div className="lg:col-span-5 relative">
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4 mt-12">
-                  <ParallaxImage 
-                    src="https://static.wixstatic.com/media/db083c_2e9dd948c80c4493aa2dcafd3f518bb6~mv2.png?originWidth=1152&originHeight=320" 
-                    alt="Fresh Ingredients" 
+                  <ParallaxImage
+                    src="https://static.wixstatic.com/media/db083c_2e9dd948c80c4493aa2dcafd3f518bb6~mv2.png?originWidth=1152&originHeight=320"
+                    alt="Fresh Ingredients"
                     className="rounded-2xl h-[300px]"
                   />
                   <div className="bg-background p-6 rounded-2xl border border-white/5">
@@ -269,9 +269,9 @@ export default function HomePage() {
                     <h4 className="font-heading text-xl text-white mb-2">Fast Service</h4>
                     <p className="font-paragraph text-sm text-white/90">Hot and ready when you need it.</p>
                   </div>
-                  <ParallaxImage 
-                    src="https://static.wixstatic.com/media/db083c_e3d264c871c24a0cb20a728f2022235f~mv2.png?originWidth=1152&originHeight=320" 
-                    alt="Chef Cooking" 
+                  <ParallaxImage
+                    src="https://static.wixstatic.com/media/db083c_e3d264c871c24a0cb20a728f2022235f~mv2.png?originWidth=1152&originHeight=320"
+                    alt="Chef Cooking"
                     className="rounded-2xl h-[350px]"
                   />
                 </div>
@@ -294,7 +294,7 @@ export default function HomePage() {
                 <p className="font-paragraph text-xl text-white/70 leading-relaxed mb-8 max-w-2xl">
                   Wrapstick serves fresh, delicious and affordable fast food including burgers, wraps, pizza, shawarma, fried chicken and thick shakes. We focus on taste, hygiene and fast service. Located in the heart of Palanpur, we are redefining what fast food means.
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-8 border-t border-white/10 pt-8">
                   <div>
                     <div className="font-heading text-4xl text-primary mb-1">100%</div>
@@ -329,7 +329,7 @@ export default function HomePage() {
       {/* --- MENU SHOWCASE (Sticky & Dynamic) --- */}
       <section className="w-full py-20 bg-background relative">
         <div className="max-w-[120rem] mx-auto px-6 md:px-12 lg:px-20">
-          
+
           <div className="mb-20 text-center">
             <h2 className="font-heading text-6xl md:text-8xl text-white mb-6">
               Menu <span className="text-primary">Highlights</span>
@@ -340,13 +340,13 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            
+
             {/* Sticky Navigation Sidebar */}
             <div className="lg:col-span-3 hidden lg:block">
               <div className="sticky top-32 space-y-2">
                 {menuCategories.map((cat, idx) => (
-                  <a 
-                    key={cat.id} 
+                  <a
+                    key={cat.id}
                     href={`#${cat.id}`}
                     className="block p-4 rounded-lg hover:bg-white/5 transition-colors group"
                   >
@@ -397,9 +397,9 @@ export default function HomePage() {
                             <p className="font-paragraph text-white/60 mb-6">
                               Our signature preparation with secret spices and premium ingredients. A must try for everyone.
                             </p>
-                            <Button 
+                            <Button
                               onClick={handleWhatsAppOrder}
-                              variant="outline" 
+                              variant="outline"
                               className="w-fit border-white/20 text-white hover:bg-primary hover:border-primary"
                             >
                               Order Now
@@ -418,7 +418,7 @@ export default function HomePage() {
 
                       {/* Standard Items */}
                       {category.items.slice(1).map((item, idx) => (
-                        <div 
+                        <div
                           key={idx}
                           className="group p-6 rounded-xl bg-dark-grey/50 border border-white/5 hover:border-primary/50 transition-colors"
                         >
@@ -458,7 +458,7 @@ export default function HomePage() {
           />
           <div className="absolute inset-0 bg-black/60" />
         </div>
-        
+
         <div className="relative z-10 text-center px-6">
           <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
@@ -485,12 +485,12 @@ export default function HomePage() {
       <section className="w-full py-32 bg-dark-grey text-white">
         <div className="max-w-[120rem] mx-auto px-6 md:px-12 lg:px-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            
+
             <div className="space-y-10">
               <h2 className="font-heading text-5xl md:text-7xl">
                 Visit <span className="text-primary">Wrapstick</span>
               </h2>
-              
+
               <div className="space-y-8">
                 <div className="flex items-start gap-6 group">
                   <div className="p-4 bg-white/5 rounded-full group-hover:bg-primary/20 transition-colors">
@@ -515,7 +515,7 @@ export default function HomePage() {
                     <p className="font-paragraph text-white/60 text-lg">
                       +91 8460480045
                     </p>
-                    <button 
+                    <button
                       onClick={handleWhatsAppOrder}
                       className="mt-2 text-primary hover:text-white transition-colors underline underline-offset-4"
                     >
