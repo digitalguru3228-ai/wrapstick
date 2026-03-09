@@ -100,7 +100,7 @@ export default function MenuItemDetailPage() {
                 </h1>
 
                 <div className="font-heading text-5xl text-primary">
-                  {formatPrice(item.itemPrice || 0, currency IndianRupee)}
+                  {formatPrice(item.itemPrice || 0, currency IndianRupee ,)}
                 </div>
 
                 {item.itemDescription && (
