@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, IndianRupee } from 'lucide-react';
 import { BaseCrudService } from '@/integrations';
 import { MenuItems } from '@/entities';
 import { useCurrency, formatPrice, DEFAULT_CURRENCY, useCart } from '@/integrations';
@@ -24,7 +24,7 @@ export default function MenuItemDetailPage() {
 
   const loadMenuItem = async () => {
     if (!id) return;
-    
+
     try {
       setIsLoading(true);
       const data = await BaseCrudService.getById<MenuItems>('menuitems', id);
@@ -39,7 +39,7 @@ export default function MenuItemDetailPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
-      
+
       <div className="pt-32 pb-24 min-h-[600px]">
         <div className="max-w-[100rem] mx-auto px-8">
           <Link to="/menu">
@@ -94,13 +94,13 @@ export default function MenuItemDetailPage() {
                     {item.category}
                   </span>
                 )}
-                
+
                 <h1 className="font-heading text-5xl md:text-6xl text-foreground">
                   {item.itemName}
                 </h1>
 
                 <div className="font-heading text-5xl text-primary">
-                  {formatPrice(item.itemPrice || 0, currency ?? DEFAULT_CURRENCY)}
+                  {formatPrice(item.itemPrice || 0, currency ?? IndianRupee)}
                 </div>
 
                 {item.itemDescription && (
@@ -114,16 +114,16 @@ export default function MenuItemDetailPage() {
 
                 <div className="pt-8 space-y-4">
                   <Button
-                    onClick={() => actions.addToCart({ 
-                      collectionId: 'menuitems', 
-                      itemId: item._id 
+                    onClick={() => actions.addToCart({
+                      collectionId: 'menuitems',
+                      itemId: item._id
                     })}
                     disabled={addingItemId === item._id}
                     className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-paragraph text-lg px-8 py-6 h-auto"
                   >
                     {addingItemId === item._id ? 'Adding to Cart...' : 'Add to Cart'}
                   </Button>
-                  
+
                   <Button
                     onClick={actions.openCart}
                     variant="outline"
