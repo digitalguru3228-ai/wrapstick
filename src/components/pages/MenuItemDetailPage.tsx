@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, IndianRupee } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { BaseCrudService } from '@/integrations';
 import { MenuItems } from '@/entities';
 import { useCurrency, formatPrice, DEFAULT_CURRENCY, useCart } from '@/integrations';
@@ -100,7 +100,7 @@ export default function MenuItemDetailPage() {
                 </h1>
 
                 <div className="font-heading text-5xl text-primary">
-                  {formatPrice(item.itemPrice || 0, currency ?? IndianRupee)}
+                  {formatPrice(item.itemPrice || 0, currency ?? DEFAULT_CURRENCY)}
                 </div>
 
                 {item.itemDescription && (
