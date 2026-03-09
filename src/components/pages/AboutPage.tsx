@@ -54,7 +54,7 @@ export default function AboutPage() {
       {/* Story Section */}
       <section className="w-full py-24">
         <div className="max-w-[100rem] mx-auto px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -66,15 +66,15 @@ export default function AboutPage() {
                 Our <span className="text-primary">Story</span>
               </h2>
               
-              <div className="space-y-6 font-paragraph text-lg text-foreground/80 leading-relaxed">
+              <div className="space-y-6 font-paragraph text-base md:text-lg text-foreground/80 leading-relaxed">
                 <p>
                   Wrapstick was born from a simple passion: to serve fresh, delicious, and affordable fast food that brings joy to every customer. Located in the heart of Palanpur, Gujarat, we've become a favorite destination for food lovers seeking quality and taste.
                 </p>
                 <p>
                   Our menu features a diverse selection of burgers, wraps, pizza, shawarma, fried chicken, and thick shakes. Each item is carefully crafted with fresh ingredients and prepared with attention to detail that sets us apart.
                 </p>
-                <p>
-                  What makes Wrapstick special is our unwavering commitment to three core principles: exceptional taste, strict hygiene standards, and fast service. We believe that great food shouldn't require compromise, and we work tirelessly to deliver on that promise every single day.
+                <p className="text-foreground/90 font-semibold">
+                  What makes Wrapstick special is our unwavering commitment to three core principles: <span className="text-primary">exceptional taste</span>, <span className="text-primary">strict hygiene standards</span>, and <span className="text-primary">fast service</span>. We believe that great food shouldn't require compromise, and we work tirelessly to deliver on that promise every single day.
                 </p>
               </div>
             </motion.div>
