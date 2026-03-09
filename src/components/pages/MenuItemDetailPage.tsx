@@ -1,15 +1,14 @@
-import { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ArrowLeft, IndianRupee, LucideIndianRupee } from 'lucide-react';
-import { BaseCrudService } from '@/integrations';
-import { MenuItems } from '@/entities';
-import { useCurrency, formatPrice, DEFAULT_CURRENCY, useCart } from '@/integrations';
-import { Button } from '@/components/ui/button';
-import { LoadingSpinner } from '@/components/ui/loading-spinner';
-import { Image } from '@/components/ui/image';
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+import { Button } from '@/components/ui/button';
+import { Image } from '@/components/ui/image';
+import { LoadingSpinner } from '@/components/ui/loading-spinner';
+import { MenuItems } from '@/entities';
+import { BaseCrudService, formatPrice, useCart, useCurrency } from '@/integrations';
+import { motion } from 'framer-motion';
+import { ArrowLeft } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
 
 export default function MenuItemDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -100,7 +99,7 @@ export default function MenuItemDetailPage() {
                 </h1>
 
                 <div className="font-heading text-5xl text-primary">
-                  {formatPrice(item.itemPrice || 0, currency, LucideIndianRupee)}
+                  {formatPrice(item.itemPrice || 0, currency, indianRupee)}
                 </div>
 
                 {item.itemDescription && (
