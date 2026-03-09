@@ -33,7 +33,7 @@ export default {
                 'secondary-foreground': '#FFFFFF',
                 'primary-foreground': '#FFFFFF',
                 primary: '#FF6600'
-            },
+            }
         },
     },
     future: {
