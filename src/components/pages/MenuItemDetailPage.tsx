@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Image } from '@/components/ui/image';
 import { LoadingSpinner } from '@/components/ui/loading-spinner';
 import { MenuItems } from '@/entities';
-import { BaseCrudService, formatPrice, useCart, useCurrency } from '@/integrations';
+import { BaseCrudService, useCart, useCurrency } from '@/integrations';
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
 import { useEffect, useState } from 'react';
@@ -99,7 +99,7 @@ export default function MenuItemDetailPage() {
                 </h1>
 
                 <div className="font-heading text-5xl text-primary">
-                  {formatPrice(item.itemPrice || 0, currency, indianRupee)}
+
                 </div>
 
                 {item.itemDescription && (
