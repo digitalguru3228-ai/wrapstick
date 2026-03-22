@@ -9,7 +9,7 @@ import { Image } from '@/components/ui/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Cart from '@/components/Cart';
-import { BadgeIndianRupeeIcon } from 'lucide-react';
+import { BadgeIndianRupeeIcon, IndianRupeeIcon } from 'lucide-react';
 
 export default function MenuPage() {
   const [items, setItems] = useState<MenuItems[]>([]);
@@ -129,7 +129,7 @@ export default function MenuPage() {
 
                     <div className="flex items-center justify-between pt-4">
                       <span className="font-heading text-3xl text-primary">
-                        {formatPrice(item.itemPrice || 0, currency ?? INDIA)}
+                        {formatPrice(item.itemPrice || 0, currency ?? IndianRupeeIcon}
                       </span>
                       <Button
                         onClick={() => actions.addToCart({
