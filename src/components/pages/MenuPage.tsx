@@ -129,7 +129,7 @@ export default function MenuPage() {
 
                     <div className="flex items-center justify-between pt-4">
                       <span className="font-heading text-3xl text-primary">
-                        {formatPrice(item.itemPrice || 0, currency ?? IndianRupeeIcon}
+                        {formatPrice(item.itemPrice || 0, currency: IndianRupeeIcon}
                       </span>
                       <Button
                         onClick={() => actions.addToCart({
