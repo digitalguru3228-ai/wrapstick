@@ -34,15 +34,15 @@ export default function MenuPage() {
   };
 
   const categories = ['All', ...Array.from(new Set(items.map(item => item.category).filter(Boolean)))];
-  
-  const filteredItems = selectedCategory === 'All' 
-    ? items 
+
+  const filteredItems = selectedCategory === 'All'
+    ? items
     : items.filter(item => item.category === selectedCategory);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative w-full pt-32 pb-24 bg-dark-grey">
         <div className="max-w-[100rem] mx-auto px-8">
@@ -106,7 +106,7 @@ export default function MenuPage() {
                       />
                     </div>
                   </Link>
-                  
+
                   <div className="p-6 space-y-4">
                     <div className="space-y-2">
                       <Link to={`/menu/${item._id}`}>
@@ -125,15 +125,15 @@ export default function MenuPage() {
                         </p>
                       )}
                     </div>
-                    
+
                     <div className="flex items-center justify-between pt-4">
                       <span className="font-heading text-3xl text-primary">
-                        {formatPrice(item.itemPrice || 0, currency ?? DEFAULT_CURRENCY)}
+                        {formatPrice(item.itemPrice || 0, currency ?? INDIA)}
                       </span>
                       <Button
-                        onClick={() => actions.addToCart({ 
-                          collectionId: 'menuitems', 
-                          itemId: item._id 
+                        onClick={() => actions.addToCart({
+                          collectionId: 'menuitems',
+                          itemId: item._id
                         })}
                         disabled={addingItemId === item._id}
                         className="bg-primary text-primary-foreground hover:bg-primary/90 font-paragraph px-6 py-5 h-auto"
