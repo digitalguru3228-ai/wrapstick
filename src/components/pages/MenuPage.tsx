@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { BaseCrudService } from '@/integrations';
 import { MenuItems } from '@/entities';
-import { useCurrency, formatPrice,INDIAN RUPPES, useCart } from '@/integrations';
+import { useCurrency, formatPrice, DEFAULT_CURRENCY, useCart } from '@/integrations';
 import { Button } from '@/components/ui/button';
 import { Image } from '@/components/ui/image';
 import Header from '@/components/Header';
