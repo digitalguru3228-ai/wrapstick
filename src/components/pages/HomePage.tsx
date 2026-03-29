@@ -130,9 +130,7 @@ export default function HomePage() {
           clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         }
       `}</style>
-
       <Header />
-
       {/* --- HERO SECTION --- */}
       <section className="relative w-full min-h-screen flex flex-col justify-center overflow-hidden pt-20">
         {/* Background Elements */}
@@ -249,12 +247,10 @@ export default function HomePage() {
           <div className="w-[1px] h-12 bg-gradient-to-b from-primary to-transparent" />
         </motion.div>
       </section>
-
       {/* --- MARQUEE SECTION --- */}
       <section className="w-full bg-primary z-30 relative">
         <Marquee text="BURGERS • WRAPS • PIZZA • SHAWARMA • FRIED CHICKEN • SHAKES" />
       </section>
-
       {/* --- ABOUT SECTION (Asymmetrical Split) --- */}
       <section className="w-full py-32 bg-dark-grey relative overflow-hidden">
         <div className="max-w-[120rem] mx-auto px-6 md:px-12 lg:px-20">
@@ -298,11 +294,11 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
-                <h4 className="text-primary font-heading text-lg tracking-widest uppercase mb-4">Our Story</h4>
                 <h2 className="font-heading text-5xl md:text-7xl text-white mb-8 leading-[0.9]">
                   We Don't Just Make Food. <br />
                   <span className="text-white/20">We Craft Experiences.</span>
                 </h2>
+                <h4 className="text-primary font-heading text-lg tracking-widest uppercase mb-4">Our Story</h4>
                 <p className="font-paragraph text-xl text-white/70 leading-relaxed mb-8 max-w-2xl">
                   Wrapstick serves fresh, delicious and affordable fast food including burgers, wraps, pizza, shawarma, fried chicken and thick shakes. We focus on taste, hygiene and fast service. Located in the heart of Palanpur, we are redefining what fast food means.
                 </p>
@@ -335,9 +331,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       <SectionDivider />
-
       {/* --- MENU SHOWCASE (Sticky & Dynamic) --- */}
       <section className="w-full py-20 bg-background relative">
         <div className="max-w-[120rem] mx-auto px-6 md:px-12 lg:px-20">
@@ -451,7 +445,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* --- FEATURED VISUAL BREAK --- */}
       <section className="w-full h-[80vh] relative overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0 z-0">
@@ -485,7 +478,6 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
-
       {/* --- LOCATION & INFO --- */}
       <section className="w-full py-32 bg-dark-grey text-white">
         <div className="max-w-[120rem] mx-auto px-6 md:px-12 lg:px-20">
@@ -549,7 +541,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       <Footer />
     </div>
   );
