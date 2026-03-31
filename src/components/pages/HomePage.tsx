@@ -526,7 +526,7 @@ export default function HomePage() {
             <div className="relative h-[500px] w-full rounded-3xl overflow-hidden border border-white/10">
                {/* Placeholder for Map - Using Image as visual representation */}
                <Image
-                  src="https://static.wixstatic.com/media/db083c_64c7f06b8d644cd397d9d25cb7e18ba1~mv2.png?originWidth=768&originHe448ight="
+                  src="https://maps.app.goo.gl/vmpGtMPPKyRmzS8RA"
                   alt="Map Location Visual"
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                   width={800}
