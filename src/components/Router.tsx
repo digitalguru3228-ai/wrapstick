@@ -3,8 +3,6 @@ import { createBrowserRouter, RouterProvider, Navigate, Outlet } from 'react-rou
 import { ScrollToTop } from '@/lib/scroll-to-top';
 import ErrorPage from '@/integrations/errorHandlers/ErrorPage';
 import HomePage from '@/components/pages/HomePage';
-import MenuPage from '@/components/pages/MenuPage';
-import MenuItemDetailPage from '@/components/pages/MenuItemDetailPage';
 import AboutPage from '@/components/pages/AboutPage';
 import ContactPage from '@/components/pages/ContactPage';
 import TableBookingPage from '@/components/pages/TableBookingPage';
@@ -30,20 +28,6 @@ const router = createBrowserRouter([
         element: <HomePage />,
         routeMetadata: {
           pageIdentifier: 'home',
-        },
-      },
-      {
-        path: "menu",
-        element: <MenuPage />,
-        routeMetadata: {
-          pageIdentifier: 'menu',
-        },
-      },
-      {
-        path: "menu/:id",
-        element: <MenuItemDetailPage />,
-        routeMetadata: {
-          pageIdentifier: 'menu-detail',
         },
       },
       {
