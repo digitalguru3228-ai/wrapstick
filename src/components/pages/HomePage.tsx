@@ -252,76 +252,76 @@ export default function HomePage() {
         <Marquee text="BURGERS • WRAPS • PIZZA • SHAWARMA • FRIED CHICKEN • SHAKES" />
       </section>
       {/* --- ABOUT SECTION (Asymmetrical Split) --- */}
-      <section className="w-full py-32 bg-dark-grey relative overflow-hidden">
-        <div className="max-w-[120rem] mx-auto px-6 md:px-12 lg:px-20">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
+      <section className="w-full py-16 md:py-24 lg:py-32 bg-dark-grey relative overflow-hidden">
+        <div className="max-w-[120rem] mx-auto px-4 sm:px-6 md:px-12 lg:px-20">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-24">
 
             {/* Image Grid */}
-            <div className="lg:col-span-5 relative">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-4 mt-12">
+            <div className="lg:col-span-5 relative order-2 lg:order-1">
+              <div className="grid grid-cols-2 gap-2 sm:gap-3 md:gap-4">
+                <div className="space-y-2 sm:space-y-3 md:space-y-4 mt-0 md:mt-12">
                   <ParallaxImage
                     src="https://static.wixstatic.com/media/db083c_2e9dd948c80c4493aa2dcafd3f518bb6~mv2.png?originWidth=1152&originHeight=320"
                     alt="Fresh Ingredients"
-                    className="rounded-2xl h-[300px]"
+                    className="rounded-lg md:rounded-2xl h-[150px] sm:h-[200px] md:h-[300px]"
                   />
-                  <div className="bg-background p-6 rounded-2xl border border-white/5">
-                    <Utensils className="w-8 h-8 text-primary mb-4" />
-                    <h4 className="font-heading text-xl text-white mb-2">Fresh Daily</h4>
-                    <p className="font-paragraph text-sm text-white/60">Ingredients sourced locally every morning.</p>
+                  <div className="bg-background p-3 sm:p-4 md:p-6 rounded-lg md:rounded-2xl border border-white/5">
+                    <Utensils className="w-6 h-6 md:w-8 md:h-8 text-primary mb-2 md:mb-4" />
+                    <h4 className="font-heading text-base md:text-xl text-white mb-1 md:mb-2">Fresh Daily</h4>
+                    <p className="font-paragraph text-xs md:text-sm text-white/60">Ingredients sourced locally every morning.</p>
                   </div>
                 </div>
-                <div className="space-y-4">
-                  <div className="bg-primary p-6 rounded-2xl">
-                    <Clock className="w-8 h-8 text-white mb-4" />
-                    <h4 className="font-heading text-xl text-white mb-2">Fast Service</h4>
-                    <p className="font-paragraph text-sm text-white/90">Hot and ready when you need it.</p>
+                <div className="space-y-2 sm:space-y-3 md:space-y-4">
+                  <div className="bg-primary p-3 sm:p-4 md:p-6 rounded-lg md:rounded-2xl">
+                    <Clock className="w-6 h-6 md:w-8 md:h-8 text-white mb-2 md:mb-4" />
+                    <h4 className="font-heading text-base md:text-xl text-white mb-1 md:mb-2">Fast Service</h4>
+                    <p className="font-paragraph text-xs md:text-sm text-white/90">Hot and ready when you need it.</p>
                   </div>
                   <ParallaxImage
                     src="https://static.wixstatic.com/media/db083c_e3d264c871c24a0cb20a728f2022235f~mv2.png?originWidth=1152&originHeight=320"
                     alt="Chef Cooking"
-                    className="rounded-2xl h-[350px]"
+                    className="rounded-lg md:rounded-2xl h-[180px] sm:h-[240px] md:h-[350px]"
                   />
                 </div>
               </div>
             </div>
 
             {/* Text Content */}
-            <div className="lg:col-span-7 flex flex-col justify-center">
+            <div className="lg:col-span-7 flex flex-col justify-center order-1 lg:order-2">
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
-                <h2 className="font-heading text-5xl md:text-7xl text-white mb-8 leading-[0.9]">
+                <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-white mb-4 md:mb-8 leading-[0.9]">
                   We Don't Just Make Food. <br />
                   <span className="text-white/20">We Craft Experiences.</span>
                 </h2>
-                <h4 className="text-primary font-heading text-lg tracking-widest uppercase mb-4">Our Story</h4>
-                <p className="font-paragraph text-xl text-white/70 leading-relaxed mb-8 max-w-2xl">
+                <h4 className="text-primary font-heading text-sm md:text-lg tracking-widest uppercase mb-2 md:mb-4">Our Story</h4>
+                <p className="font-paragraph text-base md:text-lg lg:text-xl text-white/70 leading-relaxed mb-6 md:mb-8 max-w-2xl">
                   Wrapstick serves fresh, delicious and affordable fast food including burgers, wraps, pizza, shawarma, fried chicken and thick shakes. We focus on taste, hygiene and fast service. Located in the heart of Palanpur, we are redefining what fast food means.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-8 border-t border-white/10 pt-8">
+                <div className="flex flex-col sm:flex-row gap-4 md:gap-8 border-t border-white/10 pt-4 md:pt-8">
                   <div>
-                    <div className="font-heading text-4xl text-primary mb-1">100%</div>
-                    <div className="font-paragraph text-sm text-white/50 uppercase tracking-wider">Hygiene Rating</div>
+                    <div className="font-heading text-2xl md:text-4xl text-primary mb-1">100%</div>
+                    <div className="font-paragraph text-xs md:text-sm text-white/50 uppercase tracking-wider">Hygiene Rating</div>
                   </div>
                   <div>
-                    <div className="font-heading text-4xl text-primary mb-1">50+</div>
-                    <div className="font-paragraph text-sm text-white/50 uppercase tracking-wider">Menu Items</div>
+                    <div className="font-heading text-2xl md:text-4xl text-primary mb-1">50+</div>
+                    <div className="font-paragraph text-xs md:text-sm text-white/50 uppercase tracking-wider">Menu Items</div>
                   </div>
                   <div>
-                    <div className="font-heading text-4xl text-primary mb-1">4.8</div>
-                    <div className="font-paragraph text-sm text-white/50 uppercase tracking-wider">Customer Rating</div>
+                    <div className="font-heading text-2xl md:text-4xl text-primary mb-1">4.8</div>
+                    <div className="font-paragraph text-xs md:text-sm text-white/50 uppercase tracking-wider">Customer Rating</div>
                   </div>
                 </div>
 
-                <div className="mt-12">
+                <div className="mt-6 md:mt-12">
                   <Link to="/about">
-                    <Button variant="link" className="text-white hover:text-primary p-0 font-heading text-xl group">
-                      Read More About Us <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-2" />
+                    <Button variant="link" className="text-white hover:text-primary p-0 font-heading text-base md:text-xl group">
+                      Read More About Us <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:translate-x-2" />
                     </Button>
                   </Link>
                 </div>
